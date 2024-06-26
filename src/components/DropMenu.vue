@@ -1,4 +1,3 @@
-
 <template>
     <div class="text-center">
         <v-menu
@@ -6,6 +5,7 @@
         >
           <template v-slot:activator="{ props }">
             <v-btn
+              class="dropbtn"
               bg-color="#12142a"
               color="white"
               v-bind="props"
@@ -27,14 +27,19 @@
 
 </template>
 <script>
-export default {
-data: () => ({
-    items: [
-      { title: 'Device0' },
-      { title: 'Device1' },
-      { title: 'Device2' },
-      { title: 'Device3' },
-    ],
-  }),
-}
-  </script>
+  export default {
+    data: () => ({
+        items: [
+          { title: 'Device0' },
+          { title: 'Device1' },
+          { title: 'Device2' },
+          { title: 'Device3' },
+        ],
+      }),
+  }
+</script>
+<style>
+  .dropbtn{
+    margin-right: 20px;
+  }
+</style>

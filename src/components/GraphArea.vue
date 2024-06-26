@@ -1,5 +1,6 @@
 <template>
-    <v-container style="background-color:#12142a">
+    <v-container style="background-color:#ECEFF1">
+        <SelectorMenu></SelectorMenu>
       <v-row no-gutters>
         <v-col cols="6">
           <v-sheet class="pa-2">
@@ -22,7 +23,19 @@
     </v-container>
   </template>
 
-  
+
 <style>
 
 </style>
+<script>
+import SelectorMenu from './SelectorMenu.vue'
+
+export default {
+    components: {
+        SelectorMenu
+
+    },
+    data: () => ({
+    })
+}
+</script>

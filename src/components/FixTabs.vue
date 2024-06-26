@@ -1,8 +1,8 @@
 <template>
     <div class="l-flex flex-row justify-end fixed-tabs">
-        <v-tabs v-model="tab" bg-color="#12142a" align-with-title>
+        <v-tabs v-model="tab" bg-color="#12142a" align-with-title style="width: 300px;">
             <v-tab text="Settings" value="opt1"></v-tab>
-            <v-tab text="Test2" value="opt2"></v-tab>
+            <v-tab text="Settings" value="opt2"></v-tab>
         </v-tabs>
         <v-tabs-window v-model="tab">
             <v-tabs-window-item value="opt1">
@@ -26,7 +26,7 @@
 <script>
 export default {
     data: () => ({
-        tab: 'opt1',
+        tab: 'opt1,opt2',
     }),
 }
 </script>
