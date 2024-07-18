@@ -1,32 +1,81 @@
 <template>
-    <div class="l-flex flex-row justify-end fixed-tabs">
-        <v-tabs v-model="tab" bg-color="#12142a" align-with-title style="width: 300px;">
-            <v-tab text="Settings" value="opt1"></v-tab>
-            <v-tab text="Settings" value="opt2"></v-tab>
-        </v-tabs>
-        <v-tabs-window v-model="tab">
-            <v-tabs-window-item value="opt1">
-                <v-card flat>
-                    <v-card-text>
-                        <span>test</span>
-                    </v-card-text>
-                </v-card>
-            </v-tabs-window-item>
-            <v-tabs-window-item value="opt2">
-                <v-card flat>
-                    <v-card-text>
-                        <p>Toerija2</p>
-                    </v-card-text>
-                </v-card>
-            </v-tabs-window-item>
-        </v-tabs-window>
-    </div>
-</template>
+    <v-container v-bind:width="400">
+      <v-expansion-panels>
+        <v-expansion-panel>
+          <v-expansion-panel-title>DSP parameters</v-expansion-panel-title>
+          <v-expansion-panel-text>
+            <v-expansion-panels>
+              <v-expansion-panel>
+                <v-expansion-panel-title>Acquisition Parameters</v-expansion-panel-title>
+                <v-expansion-panel-text>
+                  <v-expansion-panels>
+                    <v-expansion-panel>
+                      <v-expansion-panel-title>Pre-trigger</v-expansion-panel-title>
+                      <v-expansion-panel-text>
+                        testtrigger
+                      </v-expansion-panel-text>
+                    </v-expansion-panel>
+                    <v-expansion-panel>
+                      <v-expansion-panel-title>Holdoff</v-expansion-panel-title>
+                      <v-expansion-panel-text>
+                        testholdoff
+                      </v-expansion-panel-text>
+                    </v-expansion-panel>
+                  </v-expansion-panels>
+                </v-expansion-panel-text>
+              </v-expansion-panel>
+              <v-expansion-panel>
+                <v-expansion-panel-title>Trigger settings</v-expansion-panel-title>
+                <v-expansion-panel-text>
+                  triggertest
+                </v-expansion-panel-text>
+              </v-expansion-panel>
+              <v-expansion-panel>
+                <v-expansion-panel-title>Calibration</v-expansion-panel-title>
+                <v-expansion-panel-text>
+                  calibtest
+                </v-expansion-panel-text>
+              </v-expansion-panel>
+              <v-expansion-panel>
+                <v-expansion-panel-title>Input coupling</v-expansion-panel-title>
+                <v-expansion-panel-text>
+                  Cinputcoup
+                </v-expansion-panel-text>
+              </v-expansion-panel>
+            </v-expansion-panels>
+          </v-expansion-panel-text>
+        </v-expansion-panel>
+  
+        <v-expansion-panel>
+          <v-expansion-panel-title>Parent Panel 2</v-expansion-panel-title>
+          <v-expansion-panel-text>
+            <v-expansion-panels>
+              <v-expansion-panel>
+                <v-expansion-panel-title>Child Panel 2.1</v-expansion-panel-title>
+                <v-expansion-panel-text>
+                  Content for Child Panel 2.1
+                </v-expansion-panel-text>
+              </v-expansion-panel>
+              <v-expansion-panel>
+                <v-expansion-panel-title>Child Panel 2.2</v-expansion-panel-title>
+                <v-expansion-panel-text>
+                  Content for Child Panel 2.2
+                </v-expansion-panel-text>
+              </v-expansion-panel>
+            </v-expansion-panels>
+          </v-expansion-panel-text>
+        </v-expansion-panel>
+      </v-expansion-panels>
+    </v-container>
+  </template>
+  
+  <script>
 
-<script>
-export default {
-    data: () => ({
-        tab: 'opt1,opt2',
-    }),
-}
-</script>
+  </script>
+  
+  <style scoped>
+  .v-expansion-panel-title {
+    font-weight: bold;
+  }
+  </style>
+  

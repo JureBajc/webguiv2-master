@@ -1,45 +1,38 @@
 <template>
-    <div class="text-center">
-        <v-menu
-          open-on-click
+  <div v-bind:width="400" fixed class="text-center">
+    <v-select
+      v-model="device"
+      :items="devices"
+      label="Device"
+    ></v-select>
+    <v-menu :device="device">
+      <v-list>
+        <v-list-item
+          v-for="(item, index) in items"
+          :key="index"
         >
-          <template v-slot:activator="{ props }">
-            <v-btn
-              class="dropbtn"
-              bg-color="#12142a"
-              color="white"
-              v-bind="props"
-            >
-              Dropdown
-            </v-btn>
-          </template>
-    
-          <v-list>
-            <v-list-item
-              v-for="(item, index) in items"
-              :key="index"
-            >
-              <v-list-item-title>{{ item.title }}</v-list-item-title>
-            </v-list-item>
-          </v-list>
-        </v-menu>
-      </div>
-
+          <v-list-item-title>{{ item.title }}</v-list-item-title>
+          <v-divider></v-divider>
+        </v-list-item>
+      </v-list>
+    </v-menu>
+  </div>
 </template>
 <script>
   export default {
     data: () => ({
-        items: [
-          { title: 'Device0' },
-          { title: 'Device1' },
-          { title: 'Device2' },
-          { title: 'Device3' },
-        ],
-      }),
+      devices: [
+        'Device0',
+        'Device1',
+        'Device2',
+        'Device3',
+        'Device4',
+      ],
+      device: 'Device0',
+    }),
   }
 </script>
+
 <style>
-  .dropbtn{
-    margin-right: 20px;
-  }
+
 </style>
