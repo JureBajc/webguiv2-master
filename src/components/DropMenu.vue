@@ -1,5 +1,4 @@
 <template>
-  <div v-bind:width="400" fixed class="text-center">
     <v-select
       v-model="device"
       :items="devices"
@@ -16,7 +15,6 @@
         </v-list-item>
       </v-list>
     </v-menu>
-  </div>
 </template>
 <script>
   export default {

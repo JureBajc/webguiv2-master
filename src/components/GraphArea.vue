@@ -8,6 +8,12 @@
         </v-sheet>
       </v-col>
     </v-row>
+    <v-switch
+    label="Pause graph"
+    color="primary"
+    
+    >
+    </v-switch>
   </v-container>
 </template>
 
