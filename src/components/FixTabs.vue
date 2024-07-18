@@ -122,21 +122,14 @@
         </v-expansion-panel>
   
         <v-expansion-panel>
-          <v-expansion-panel-title>Parent Panel 2</v-expansion-panel-title>
+          <v-expansion-panel-title>Platform info</v-expansion-panel-title>
           <v-expansion-panel-text>
 
             <v-expansion-panels>
               <v-expansion-panel>
-                <v-expansion-panel-title>Child Panel 2.1</v-expansion-panel-title>
+                <v-expansion-panel-title>Accelerometer</v-expansion-panel-title>
                 <v-expansion-panel-text>
-                  Content for Child Panel 2.1
-                </v-expansion-panel-text>
-              </v-expansion-panel>
-
-              <v-expansion-panel>
-                <v-expansion-panel-title>Child Panel 2.2</v-expansion-panel-title>
-                <v-expansion-panel-text>
-                  Content for Child Panel 2.2
+                  accelltest
                 </v-expansion-panel-text>
               </v-expansion-panel>
             </v-expansion-panels>
