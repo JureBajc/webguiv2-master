@@ -3,7 +3,7 @@
       <v-autocomplete
         v-model="search"
         :items="items"
-        label="Select a panel"
+        label="Search settings"
         @update:search="openPanel"
       ></v-autocomplete>
 
@@ -127,7 +127,9 @@
 
           </v-expansion-panel-text>
         </v-expansion-panel>
-  
+         
+        <spacer></spacer>
+        
         <v-expansion-panel>
           <v-expansion-panel-title>Platform info</v-expansion-panel-title>
           <v-expansion-panel-text>
