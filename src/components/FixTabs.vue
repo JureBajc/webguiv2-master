@@ -132,7 +132,7 @@
           <v-expansion-panel-title>Platform info</v-expansion-panel-title>
           <v-expansion-panel-text>
 
-            <v-expansion-panels v-model="mainPanel">
+            <v-expansion-panels v-model="subPanel2">
               <v-expansion-panel>
                 <v-expansion-panel-title id="colorSec">Accelerometer</v-expansion-panel-title>
                 <v-expansion-panel-text>
@@ -238,7 +238,7 @@ export default {
           break;
         case "Accelerometer":
           this.mainPanel = [1];
-          this.subPanel2 = [];
+          this.subPanel2 = [0];
           this.subPanel3 = [];
           break;
         default:
