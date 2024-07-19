@@ -8,7 +8,7 @@
           max-width="200px"
           contain
           ></v-img>
-          <v-toolbar-title class="ml-2">
+          <v-toolbar-title style="margin-left:42px">
             X-Logger
           </v-toolbar-title>
 
@@ -29,16 +29,12 @@
 
         <v-main>
           <GraphArea></GraphArea>
-
           <v-navigation-drawer v-bind:width="400" location="right">
             <DropMenu></DropMenu>
             <FixTabs></FixTabs>
           </v-navigation-drawer>
-
           <LeftSideMenu/>
-
           <FooterCenter/>
-
         </v-main>
   </v-app>
 </template>
@@ -57,7 +53,7 @@ export default {
     DropMenu,
     LeftSideMenu,
     FooterCenter,
-    FixTabs
+    FixTabs,
   }
 }
 </script> 
