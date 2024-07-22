@@ -1,3 +1,4 @@
+// This is the LeftSideMenu component
 <template>
     <v-navigation-drawer
     color="#12142a"

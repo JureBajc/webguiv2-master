@@ -8,21 +8,33 @@
         </v-sheet>
       </v-col>
     </v-row>
-    <v-switch
-    label="Pause graph"
-    color="primary"
-    
-    >
-    </v-switch>
+    <v-row no-gutters align="center">
+      <v-btn-toggle
+        v-model="toggle"
+        variant="outlined"
+        divided
+      >
+        <v-btn>Add Graph</v-btn>
+        <v-btn>Remove Graph</v-btn>
+        <v-btn>Download Graph</v-btn>
+        <v-btn :class="{ 'pause-active': isPaused }" @click="togglePause" class="default-green">Pause Graph</v-btn>
+      </v-btn-toggle>
+    </v-row>
   </v-container>
 </template>
 
 <style>
 .container {
-  margin: 10px 10px 10px 10px;
   padding: 0px 0px 0px 0px;
 }
+.default-green {
+  background-color: #C8E6C9; /* Default green color */
+}
+.pause-active {
+  background-color: #FFCDD2; /* Red color when active */
+}
 </style>
+
 <script>
 import SelectorMenu from './SelectorMenu.vue'
 
@@ -30,7 +42,16 @@ export default {
   components: {
     SelectorMenu
   },
-  data: () => ({
-  })
+  data() {
+    return {
+      toggle: null,
+      isPaused: false,
+    };
+  },
+  methods: {
+    togglePause() {
+      this.isPaused = !this.isPaused;
+    },
+  },
 }
 </script>

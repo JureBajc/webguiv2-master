@@ -1,23 +1,24 @@
+// This component is used to display the selection menu for the signals. It contains a combobox for selecting the signals, a select for selecting the signal source, and text fields for displaying the buffer size, buffer duration, and displayed signal size.
 <template>
     <div style="margin-top: 10px;">
         <v-row>
-        <v-combobox
-            fixed style="width: 20%;"
-            clearable
-            chips
-            multiple
-            variant="outlined"
-            label="Signal selection"
-            :items="['a1', 'a2', 'a3', 'a4', 'a5', 'a6']"
-        >
-        </v-combobox>
-        <v-select
-                fixed style="width:213.663px"
-                label="Select signal source"
-                :items="['High speed AI', 'Accel', 'AUX signal']"
+            <v-combobox
+                fixed style="width: 20%;"
+                clearable
+                chips
+                multiple
                 variant="outlined"
-        ></v-select> 
-        <v-text-field
+                label="Signal selection"
+                :items="['a1', 'a2', 'a3', 'a4', 'a5', 'a6']"
+            >
+            </v-combobox>
+            <v-select
+                    fixed style="width:213.663px"
+                    label="Select signal source"
+                    :items="['High speed AI', 'Accel', 'AUX signal']"
+                    variant="outlined"
+            ></v-select> 
+            <v-text-field
                 fixed style="width:276.5px;"
                 label="Signal buffer size"
                 model-value="1000 samples"
