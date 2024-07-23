@@ -1,6 +1,6 @@
 # webguiv2
 
-## Requerements
+## Requirements
 ```
 Node v18
 ```
