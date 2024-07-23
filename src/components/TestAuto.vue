@@ -1,3 +1,4 @@
+// This is a test component to demonstrate the use of v-autocomplete and v-expansion-panels
 <template>
     <v-container>
       <v-autocomplete

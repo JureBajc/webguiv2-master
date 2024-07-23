@@ -1,4 +1,4 @@
-// This is the LeftSideMenu component
+// This is the LeftSideMenu component dont know what to put in it.
 <template>
     <v-navigation-drawer
     color="#12142a"

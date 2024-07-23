@@ -1,3 +1,4 @@
+// This component is used to fill the bottom of the page with a console log message, RMS tables and AUX signal tables.
 <template>
     <div class="container">
         <div class="boxt">

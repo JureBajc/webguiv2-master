@@ -1,3 +1,4 @@
+// This is the main component that will hold the graph and the buttons to interact with it, buttons lack functionality for now.
 <template>
   <v-container fixed style="background-color:#ECEFF1">
     <SelectorMenu></SelectorMenu>

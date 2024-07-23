@@ -1,4 +1,4 @@
-// This is the main component that will be rendered in the App.vue file. It contains the v-tabs and v-tab-items components. The v-tabs component contains the v-tab component, which is used to create the tabs. The v-tab-items component contains the v-tab-item component, which is used to create the content of the tabs. The v-tab-item component contains the v-card component, which is used to create the card layout for the content of the tabs.
+// implementation of the settings and a search functionality to find them.
 <template>
     <v-container style="margin-right:40px">
       <v-autocomplete

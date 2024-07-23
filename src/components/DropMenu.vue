@@ -1,3 +1,4 @@
+//A drop down menu to pick devices from, need implementation for the menu items
 <template>
     <v-select
       v-model="device"
