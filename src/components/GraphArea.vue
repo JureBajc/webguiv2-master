@@ -17,8 +17,8 @@
         density="compact"
       >
         <v-btn @click="logTest">Add Graph</v-btn>
-        <v-btn>Remove Graph</v-btn>
-        <v-btn>Download Graph</v-btn>
+        <v-btn @click="console.log('Removed graph')">Remove Graph</v-btn>
+        <v-btn @click="console.log('Download Graph')">Download Graph</v-btn>
         <v-btn :class="{ 'pause-active': isPaused }" @click="togglePause" class="default-green">Pause Graph</v-btn>
       </v-btn-toggle>
     </v-row>

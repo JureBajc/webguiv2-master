@@ -39,12 +39,15 @@ export default {
         }
     },
     created() {
-        const originalConsoleLog = console.log;
-        console.log = (...args) => {
-            this.logMessage = 'Console: ' + args.join(' ');
-            originalConsoleLog.apply(console, args);
-        };
-    }
+    const originalConsoleLog = console.log;
+    console.log = (...args) => {
+        if (!this.logMessage) {
+            this.logMessage = '';
+        }
+        this.logMessage += '\n'+'Console: ' + args.join(' ') + '\n';
+        originalConsoleLog.apply(console, args);
+    };
+  }
 }
 </script>
 
@@ -78,6 +81,7 @@ export default {
   font-size: 16px;
   word-wrap: break-word;
   color: white;
+  overflow-y: auto;
 }
 .boxp {
     width: 50%;
@@ -87,6 +91,5 @@ ul li {
   background: #cce5ff;
   color: rgb(57, 57, 150);
   margin-left: 50px;
-
 }
 </style>
