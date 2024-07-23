@@ -2,6 +2,7 @@
 <template>
     <v-container style="margin-right:40px">
       <v-autocomplete
+        append-icon="mdi-layers-search-outline"
         v-model="search"
         :items="items"
         label="Search settings"

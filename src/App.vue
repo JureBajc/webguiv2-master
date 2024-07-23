@@ -28,7 +28,11 @@
         </v-app-bar>
 
         <v-main>
-          <GraphArea></GraphArea>
+          <div>
+            <GraphArea></GraphArea>
+            <GraphArea></GraphArea>
+            <BottomFiller></BottomFiller>
+          </div>
           <v-navigation-drawer v-bind:width="400" location="right">
             <DropMenu></DropMenu>
             <FixTabs></FixTabs>
@@ -45,6 +49,7 @@ import GraphArea from './components/GraphArea.vue';
 import LeftSideMenu from './components/LeftSideMenu.vue';
 import FooterCenter from './components/FooterCenter.vue';
 import FixTabs from './components/FixTabs.vue';
+import BottomFiller from './components/BottomFiller.vue';
 export default {
   name: 'App',
 
@@ -54,21 +59,19 @@ export default {
     LeftSideMenu,
     FooterCenter,
     FixTabs,
+    BottomFiller
   }
 }
 </script> 
 <style>
-html {
-  overflow: hidden !important;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-
 html::-webkit-scrollbar {
   width: 0;
   height: 0;
 }
 .center {
   text-align: center;
+}
+.scrollable {
+  overflow-y: auto;
 }
 </style>

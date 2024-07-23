@@ -13,8 +13,9 @@
         v-model="toggle"
         variant="outlined"
         divided
+        density="compact"
       >
-        <v-btn>Add Graph</v-btn>
+        <v-btn @click="logTest">Add Graph</v-btn>
         <v-btn>Remove Graph</v-btn>
         <v-btn>Download Graph</v-btn>
         <v-btn :class="{ 'pause-active': isPaused }" @click="togglePause" class="default-green">Pause Graph</v-btn>
@@ -32,6 +33,9 @@
 }
 .pause-active {
   background-color: #FFCDD2; /* Red color when active */
+}
+.scrollable {
+  overflow-y: scroll;
 }
 </style>
 
@@ -51,6 +55,9 @@ export default {
   methods: {
     togglePause() {
       this.isPaused = !this.isPaused;
+    },
+    logTest() {
+      console.log("Uncaught TypeError: Cannot read property 'length' of undefined at Array.prototype.map (<anonymous>) at fetchData (app.js:45) at Object.callback (main.js:32) at handleResponse (ajax.js:67) at XMLHttpRequest.xhr.onreadystatechange (ajax.js:22)");
     },
   },
 }
