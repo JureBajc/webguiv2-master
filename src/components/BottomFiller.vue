@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <div class="box">
+        <div class="boxt">
             {{ logMessage }}
         </div>
         <div class="box">
@@ -66,16 +66,26 @@ export default {
     font-size: 16px;
     word-wrap: break-word;
 }
+.boxt{
+  flex: 1;
+  height: 200px;
+  background-color: #12142a;
+  margin: 16px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  font-size: 16px;
+  word-wrap: break-word;
+  color: white;
+}
 .boxp {
     width: 50%;
     height: 50%;
-    border: 1px solid black;
-
 }
 ul li {
   background: #cce5ff;
-  color: darkblue;
-  margin: 5px;
+  color: rgb(57, 57, 150);
+  margin-left: 50px;
 
 }
 </style>
