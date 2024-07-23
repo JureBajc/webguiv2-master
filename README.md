@@ -1,5 +1,10 @@
 # webguiv2
 
+## Requirements
+```
+Node v18
+```
+
 ## Project setup
 ```
 npm install
